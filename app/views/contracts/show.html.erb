@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @contract.name %>
+</p>
+
+<p>
+  <strong>Sector:</strong>
+  <%= @contract.sector %>
+</p>
+
+<p>
+  <strong>Industry:</strong>
+  <%= @contract.industry %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @contract.country %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @contract.type %>
+</p>
+
+<p>
+  <strong>Subtype:</strong>
+  <%= @contract.subtype %>
+</p>
+
+<p>
+  <strong>Potfolio:</strong>
+  <%= @contract.potfolio_id %>
+</p>
+
+<%= link_to 'Edit', edit_contract_path(@contract) %> |
+<%= link_to 'Back', contracts_path %>

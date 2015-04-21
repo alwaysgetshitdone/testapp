@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  sector: MyString
+  industry: MyString
+  country: MyString
+  type: 
+  subtype: MyString
+  potfolio_id: MyString
+
+two:
+  name: MyString
+  sector: MyString
+  industry: MyString
+  country: MyString
+  type: 
+  subtype: MyString
+  potfolio_id: MyString

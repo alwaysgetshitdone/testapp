@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Transactions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Contract</th>
+      <th>Portfolio</th>
+      <th>Qty</th>
+      <th>Buy price</th>
+      <th>Current price</th>
+      <th>Variance in percent</th>
+      <th>Variance in currency</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @transactions.each do |transaction| %>
+      <tr>
+        <td><%= transaction.contract_id %></td>
+        <td><%= transaction.portfolio_id %></td>
+        <td><%= transaction.qty %></td>
+        <td><%= transaction.buy_price %></td>
+        <td><%= transaction.current_price %></td>
+        <td><%= transaction.variance_in_percent %></td>
+        <td><%= transaction.variance_in_currency %></td>
+        <td><%= link_to 'Show', transaction %></td>
+        <td><%= link_to 'Edit', edit_transaction_path(transaction) %></td>
+        <td><%= link_to 'Destroy', transaction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Transaction', new_transaction_path %>

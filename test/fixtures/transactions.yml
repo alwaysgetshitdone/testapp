@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  contract_id: 1
+  portfolio_id: 1
+  qty: 1
+  buy_price: 
+  current_price: 
+  variance_in_percent: 
+  variance_in_currency: 
+
+two:
+  contract_id: 1
+  portfolio_id: 1
+  qty: 1
+  buy_price: 
+  current_price: 
+  variance_in_percent: 
+  variance_in_currency: 
